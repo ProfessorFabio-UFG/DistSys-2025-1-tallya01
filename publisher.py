@@ -19,7 +19,7 @@ while True:
 		s.send(msg) # publish the current time
 	
 	if topic == 'RPS':
-		msg = str.encode("RPS " + ''.join(random.choices(rps_values, k=2)))
+		msg = str.encode("RPS " + ' '.join(random.choices(rps_values, k=2)))
 		s.send(msg)
 
 	if topic == 'COIN':
